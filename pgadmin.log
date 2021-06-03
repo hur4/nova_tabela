@@ -1,0 +1,681 @@
+2016-03-07 09:32:38 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "admin"
+
+2016-03-07 09:33:29 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "admin"
+
+2016-03-08 09:16:53 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2016-03-09 18:54:11 ERROR  : ERROR:  table name "mdlacademico_course" specified more than once
+2016-03-09 18:59:59 ERROR  : ERROR:  function pg_total_relation_size(name) does not exist
+LINE 4:   pg_total_relation_size(c.relname) as tamanho
+          ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2016-03-09 20:41:14 ERROR  : ERROR:  column "firstname" does not exist
+LINE 1: SELECT firstname FROM information_schema.columns WHERE table...
+               ^
+2016-03-09 20:59:06 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 2: WHERE
+        ^
+2016-03-09 21:00:52 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 2: WHERE firstname = ´ HUMBERTO ´ 
+        ^
+2016-03-09 21:30:16 ERROR  : ERROR:  column "humberto" does not exist
+2016-03-09 21:36:31 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 3: WHERE cpf = 59927224672;
+        ^
+2016-03-09 21:36:48 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 2: WHERE cpf = 59927224672;
+        ^
+2016-03-09 21:37:26 ERROR  : ERROR:  operator does not exist: character = bigint
+LINE 2: WHERE cpf = 59927224672;
+                  ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-03-11 16:19:58 ERROR  : ERROR:  relation "mdl_grade_items" does not exist
+LINE 1: ...ELECT id,itemname,itemtype,gradetype,scaleid FROM mdl_grade_...
+                                                             ^
+2016-03-11 16:20:39 ERROR  : ERROR:  relation "mdl_grade_items" does not exist
+LINE 1: SELECT * FROM mdl_grade_items WHERE courseid=88
+                      ^
+2016-03-11 16:38:03 ERROR  : ERROR:  operator does not exist: bigint =?
+LINE 9: ...items i ON g.itemid=i.id WHERE i.courseid=196 AND g.userid=?
+                                                                     ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-03-11 17:06:49 ERROR  : ERROR:  relation "mdl_context" does not exist
+LINE 6: ... mdlacademico_user u ON u.id=rs.userid INNER JOIN mdl_contex...
+                                                             ^
+2016-03-11 17:07:26 ERROR  : ERROR:  operator does not exist: bigint =?
+LINE 6: ...d WHERE e.contextlevel=50 AND rs.roleid=5 AND e.instanceid=?
+                                                                     ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-03-11 17:11:51 ERROR  : ERROR:  operator does not exist: bigint =?
+LINE 8: ...ceid WHERE e.contextlevel=50 AND rs.roleid=5 AND rs.userid=?
+                                                                     ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-03-11 21:44:01 ERROR  : ERROR:  function from_unixtime(bigint, unknown) does not exist
+LINE 5: SELECT DISTINCT from_unixtime( timecreated, '%d/%m/%Y %h:%i:...
+                        ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2016-03-14 18:54:20 ERROR  : ERROR:  column "courseid" does not exist
+LINE 5: SELECT * FROM mdlacademico_course WHERE courseid=196
+                                                ^
+2016-03-14 18:57:20 ERROR  : ERROR:  column "courseid" does not exist
+LINE 7: ...ELECT id, category FROM mdlacademico_course WHERE courseid=1...
+                                                             ^
+2016-03-15 12:02:47 ERROR  : ERROR:  syntax error at or near "FRON"
+LINE 1: SELECT * FRON mdlacademico_assign 
+                 ^
+2016-03-15 12:05:59 ERROR  : ERROR:  relation "mdlacademico_assign_items" does not exist
+LINE 5: ...COUNT(g.id) FROM mdlacademico_assign g INNER JOIN mdlacademi...
+                                                             ^
+2016-03-15 12:08:42 ERROR  : ERROR:  column "count" does not exist
+LINE 1: SELECT COUNT id, course, name FROM mdlacademico_assign WHERE...
+               ^
+2016-03-15 12:09:28 ERROR  : ERROR:  missing FROM-clause entry for table "g"
+LINE 1: SELECT COUNT(g.id) FROM mdlacademico_assign WHERE course = 1...
+                     ^
+2016-03-15 12:10:24 ERROR  : ERROR:  column "g.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT id, COUNT(g.id) FROM mdlacademico_assign g WHERE cour...
+               ^
+2016-03-15 12:13:31 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 2: SELECT COUNT(g.id) FROM mdlacademico_assign g WHERE course =...
+        ^
+2016-03-15 12:13:38 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 2: SELECT COUNT(g.id) FROM mdlacademico_assign g WHERE course =...
+        ^
+2016-03-15 12:14:09 ERROR  : ERROR:  relation "mdlacademico_assign_items" does not exist
+LINE 5: ...COUNT(g.id) FROM mdlacademico_assign g INNER JOIN mdlacademi...
+                                                             ^
+2016-03-15 12:14:41 ERROR  : ERROR:  column g.itemid does not exist
+LINE 5: ...sign g INNER JOIN mdlacademico_assign_grades i ON g.itemid=i...
+                                                             ^
+2016-03-16 10:59:49 ERROR  : ERROR:  operator does not exist: bigint =?
+LINE 1: ...ceid WHERE e.contextlevel=50 AND rs.roleid=5 AND rs.userid=?
+                                                                     ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-03-16 11:51:06 ERROR  : ERROR:  syntax error at or near "ra"
+LINE 29: ra.contextid in (SELECT id from mdlacademico_context c where...
+         ^
+2016-03-16 11:55:15 ERROR  : ERROR:  missing FROM-clause entry for table "ml"
+LINE 12: ...totais FROM mdlacademico_log WHERE userid=118 and ml.course ...
+                                                              ^
+2016-03-16 15:39:28 ERROR  : ERROR:  column c.sortname does not exist
+LINE 1: SELECT c.id,c.fullname, c.category, c.sortname     FROM mdla...
+                                            ^
+HINT:  Perhaps you meant to reference the column "c.shortname".
+2016-03-16 15:39:36 ERROR  : ERROR:  column c.sortename does not exist
+LINE 1: SELECT c.id,c.fullname, c.category, c.sortename     FROM mdl...
+                                            ^
+HINT:  Perhaps you meant to reference the column "c.shortname".
+2016-03-16 15:49:31 ERROR  : ERROR:  column "intemmodule" does not exist
+LINE 1: SELECT id,courseid, itemname,itemtype, intemmodule, gradetyp...
+                                               ^
+HINT:  Perhaps you meant to reference the column "mdlacademico_grade_items.itemmodule".
+2016-03-16 16:48:45 ERROR  : ERROR:  column "mdlacademico_log.userid" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT COUNT(id) AS qvisita, userid FROM mdlacademico_log WH...
+                                     ^
+2016-03-16 17:31:54 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 1: ...ntextlevel=50 AND rs.roleid=3 AND e.instanceid=88 SELECT u.i...
+                                                             ^
+2016-03-16 17:32:11 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 1: ...ntextlevel=50 AND rs.roleid=3 AND e.instanceid=88 SELECT u.i...
+                                                             ^
+2016-03-16 17:32:30 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 1: ...ntextlevel=50 AND rs.roleid=3 AND e.instanceid=88 SELECT u.i...
+                                                             ^
+2016-03-16 17:32:30 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 1: ...ntextlevel=50 AND rs.roleid=3 AND e.instanceid=88 SELECT u.i...
+                                                             ^
+2016-03-16 17:42:12 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 1: ...SELECT u.id, u.userid, u.firstname,u.lastname,    FROM mdlac...
+                                                             ^
+2016-03-16 17:42:22 ERROR  : ERROR:  column u.userid does not exist
+LINE 1:  SELECT u.id, u.userid, u.firstname,u.lastname FROM mdlacade...
+                      ^
+HINT:  Perhaps you meant to reference the column "rs.userid".
+2016-03-16 20:01:08 ERROR  : ERROR:  column "qvisita" does not exist
+LINE 5: SELECT userid, qvisita, COUNT(id)
+                       ^
+2016-03-16 20:01:55 ERROR  : ERROR:  column "qvisita" does not exist
+LINE 5: SELECT userid, qvisita, COUNT(id) AS qvisita
+                       ^
+2016-03-16 20:02:13 ERROR  : ERROR:  column "qvisita" does not exist
+LINE 5: SELECT qvisita, COUNT(id) AS qvisita
+               ^
+2016-03-16 20:15:06 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 5: SELECT id, action,  FROM mdlacademico_log WHERE userid=118 a...
+                            ^
+2016-03-16 20:15:20 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 5: SELECT action,  FROM mdlacademico_log WHERE userid=118 and c...
+                        ^
+2016-03-16 20:40:57 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 12: SELECT
+         ^
+2016-03-16 20:41:12 ERROR  : ERROR:  syntax error at or near "("
+LINE 14: COUNT(id) AS qtd
+              ^
+2016-03-16 20:41:34 ERROR  : ERROR:  syntax error at or near "("
+LINE 13: COUNT(id) AS qtd
+              ^
+2016-03-16 20:45:38 ERROR  : ERROR:  column "mdlacademico_log.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 12: SELECT id,
+                ^
+2016-03-16 20:47:28 ERROR  : ERROR:  column "mdlacademico_log.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 17: ORDER BY id;
+                  ^
+2016-03-16 20:49:59 ERROR  : ERROR:  column "mdlacademico_log.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 17: ORDER BY id;
+                  ^
+2016-03-16 20:51:31 ERROR  : ERROR:  column "mdlacademico_log.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 12: SELECT *,
+                ^
+2016-03-16 21:28:42 ERROR  : ERROR:  syntax error at or near "-"
+LINE 21: - SELECT u.id, u.firstname, u.lastname, COUNT(l.id) AS qvisi...
+         ^
+2016-03-16 21:45:45 ERROR  : ERROR:  relation "mdl_log" does not exist
+LINE 24: SELECT MIN(time) FROM mdl_log WHERE userid= 43 AND course=19...
+                               ^
+2016-03-17 09:02:41 ERROR  : ERROR:  syntax error at or near "ORDEY"
+LINE 5: ORDEY BY userid
+        ^
+2016-03-17 09:05:16 ERROR  : ERROR:  missing FROM-clause entry for table "rs"
+LINE 4: WHERE i.courseid=88 and rs.roleid=3
+                                ^
+2016-03-17 09:05:23 ERROR  : ERROR:  column "roleid" does not exist
+LINE 4: WHERE i.courseid=88 and roleid=3
+                                ^
+HINT:  Perhaps you meant to reference the column "i.scaleid".
+2016-03-17 09:36:43 ERROR  : ERROR:  unterminated quoted string at or near "'pg_toast‘) 
+	ORDER BY schemaname, tablename
+"
+LINE 2: ...aname NOT IN ('pg_catalog', 'information_schema', 'pg_toast‘...
+                                                             ^
+2016-03-17 10:07:53 ERROR  : ERROR:  relation "mdl_log" does not exist
+LINE 2: ...ademico_context e ON rs.contextid=e.id INNER JOIN mdl_log l ...
+                                                             ^
+2016-03-17 10:08:02 ERROR  : ERROR:  operator does not exist: bigint =?
+LINE 2: ...e.contextlevel=50 AND rs.roleid=3 AND e.instanceid=? AND l.c...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-03-17 10:14:17 ERROR  : ERROR:  missing FROM-clause entry for table "ml"
+LINE 2: ....contextlevel=50 AND rs.roleid=3 AND e.instanceid=ml.course ...
+                                                             ^
+2016-03-17 10:36:31 ERROR  : ERROR:  missing FROM-clause entry for table "l"
+LINE 5: SELECT from_unixtime(MIN(l.time),'%d/%m/%Y %H:%i:%s') as dat...
+                                 ^
+2016-03-17 10:37:34 ERROR  : ERROR:  function from_unixtime(bigint, unknown) does not exist
+LINE 5: SELECT from_unixtime(MIN(time),'%d/%m/%Y %H:%i:%s') as dataH...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2016-03-17 10:38:41 ERROR  : ERROR:  function from_unixtime(bigint, unknown) does not exist
+LINE 5: SELECT from_unixtime(MIN(time),'%d/%m/%Y %H:%i:%s') as dataH...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2016-03-17 10:39:06 ERROR  : ERROR:  missing FROM-clause entry for table "l"
+LINE 5: SELECT from_unixtime(MIN(l.time),'%d/%m/%Y %H:%i:%s') as dat...
+                                 ^
+2016-03-17 11:16:12 ERROR  : ERROR:  column "time" does not exist
+LINE 9: SELECT extract(year from timestamp 'epoch' + "time" * interv...
+                                                     ^
+2016-03-17 11:16:37 ERROR  : ERROR:  relation "log" does not exist
+LINE 10: from log;
+              ^
+2016-03-17 11:19:51 ERROR  : ERROR:  missing FROM-clause entry for table "u"
+LINE 11: select u.id, u.firstname,u.lastname, extract(year from times...
+                ^
+2016-03-17 11:20:12 ERROR  : ERROR:  column "firstname" does not exist
+LINE 11: select id, firstname,lastname, extract(year from timestamp '...
+                    ^
+2016-03-17 11:22:12 ERROR  : ERROR:  column "firstname" does not exist
+LINE 11: select id, firstname, extract(year from timestamp 'epoch' + ...
+                    ^
+2016-03-17 11:27:22 ERROR  : ERROR:  syntax error at or near ","
+LINE 14:  select id, extract(year,mes from timestamp 'epoch' + "time"...
+                                 ^
+2016-03-17 11:27:34 ERROR  : ERROR:  syntax error at or near ","
+LINE 14:  select id, extract(year, day from timestamp 'epoch' + "time...
+                                 ^
+2016-03-17 11:29:28 ERROR  : ERROR:  timestamp units "age" not recognized
+2016-03-17 11:37:55 ERROR  : ERROR:  syntax error at or near "month"
+LINE 17: month
+         ^
+2016-03-17 11:38:50 ERROR  : ERROR:  column "timestamp" does not exist
+LINE 14:  select id, timestamp, extract(day from timestamp 'epoch' + ...
+                     ^
+2016-03-17 11:39:00 ERROR  : ERROR:  column "timestamp" does not exist
+LINE 14:  select id, timestamp, extract(day from timestamp 'epoch' + ...
+                     ^
+2016-03-17 11:39:30 ERROR  : ERROR:  column "mdlacademico_log.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 14:  select id, MIN(time), extract(day from timestamp 'epoch' + ...
+                 ^
+2016-03-17 11:42:33 ERROR  : ERROR:  syntax error at or near "extract"
+LINE 17:          extract(hour from timestamp 'epoch' + "time" * inte...
+                  ^
+2016-03-17 14:32:57 ERROR  : ERROR:  relation "mdlacademico_role" already exists
+2016-03-17 14:44:32 ERROR  : ERROR:  syntax error at or near "ORDER"
+LINE 3:   ORDER BY tipo, curso;
+          ^
+2016-03-17 15:13:04 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 4:   WHERE firstname = 'Celia'
+          ^
+2016-03-17 15:14:42 ERROR  : ERROR:  column "46595228491" does not exist
+LINE 4:   WHERE CPF = "46595228491"
+                      ^
+2016-03-17 15:14:50 ERROR  : ERROR:  operator does not exist: character varying = bigint
+LINE 4:   WHERE CPF = 46595228491
+                    ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-03-17 15:18:08 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 10: WHERE username = 'HUMBERTO'
+         ^
+2016-03-17 17:07:17 ERROR  : ERROR:  syntax error at or near "indent"
+LINE 2:        indent, visible, visibleold, groupmode, groupingid, g...
+               ^
+2016-03-17 17:09:31 ERROR  : ERROR:  column "mdlacademico_course_modules.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT id, course, module, instance, section,
+               ^
+2016-03-17 17:09:55 ERROR  : ERROR:  syntax error at or near "("
+LINE 9: COUNT(module) AS qtd
+             ^
+2016-03-17 17:10:07 ERROR  : ERROR:  syntax error at or near "("
+LINE 9: COUNT(module) AS qtd
+             ^
+2016-03-17 17:11:06 ERROR  : ERROR:  syntax error at or near "("
+LINE 9: COUNT(module) AS qtd
+             ^
+2016-03-17 17:14:09 ERROR  : ERROR:  column "mdlacademico_course_modules.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT id, course, module, instance, section, idnumber, adde...
+               ^
+2016-03-17 17:14:19 ERROR  : ERROR:  column "mdlacademico_course_modules.course" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT course, module, instance, section, idnumber, added, s...
+               ^
+2016-03-17 17:14:24 ERROR  : ERROR:  column "mdlacademico_course_modules.instance" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT module, instance, section, idnumber, added, score,
+                       ^
+2016-03-17 17:14:30 ERROR  : ERROR:  syntax error at or near "("
+LINE 9: COUNT(module) AS qtd
+             ^
+2016-03-17 17:14:42 ERROR  : ERROR:  column "mdlacademico_course_modules.instance" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT module, instance, section, idnumber, added,
+                       ^
+2016-03-17 17:14:50 ERROR  : ERROR:  column "mdlacademico_course_modules.section" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT module, section, idnumber, added,
+                       ^
+2016-03-17 17:14:55 ERROR  : ERROR:  column "mdlacademico_course_modules.idnumber" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT module, idnumber, added,
+                       ^
+2016-03-17 17:14:58 ERROR  : ERROR:  column "mdlacademico_course_modules.added" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT module,  added,
+                        ^
+2016-03-17 17:20:47 ERROR  : ERROR:  syntax error at or near "-"
+LINE 8: - SELECT module,  
+        ^
+2016-03-17 17:22:34 ERROR  : ERROR:  syntax error at or near "GROUP"
+LINE 19: GROUP BY action
+         ^
+2016-03-17 18:13:13 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 5:   FROM public.mdlacademico_course_modules
+          ^
+2016-03-17 18:17:14 ERROR  : ERROR:  column "mdlacademico_course_modules.course" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT module, course, instance,
+                       ^
+2016-03-17 18:17:44 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 9: FROM mdlacademico_course_modules
+        ^
+2016-03-17 18:17:52 ERROR  : ERROR:  column "mdlacademico_course_modules.course" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 8: SELECT module, COUNT(module) AS qtd, course, instance
+                                             ^
+2016-03-17 18:18:25 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 9: SELECT course, instance
+        ^
+2016-03-17 18:18:37 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 9: SELECT course, instance
+        ^
+2016-03-23 08:27:41 ERROR  : ERROR:  syntax error at or near "ORDER"
+LINE 4: ORDER BY name
+        ^
+2016-03-28 08:39:12 ERROR  : ERROR:  column "Educação e Tecnologia" does not exist
+LINE 8:   WHERE fullname = "Educação e Tecnologia"
+                           ^
+2016-03-28 08:39:36 ERROR  : ERROR:  column "Educação e Tecnologia" does not exist
+LINE 8:   WHERE fullname = "Educação e Tecnologia"
+                           ^
+2016-03-28 08:39:48 ERROR  : ERROR:  column " Educação e Tecnologia " does not exist
+LINE 8:   WHERE fullname = " Educação e Tecnologia "
+                           ^
+2016-03-28 08:42:24 ERROR  : ERROR:  column "Educação e Tecnologia" does not exist
+LINE 8:   WHERE fullname = "Educação e Tecnologia"
+                           ^
+2016-03-28 08:42:36 ERROR  : ERROR:  syntax error at or near "e"
+LINE 8:   WHERE fullname = Educação e Tecnologia
+                                    ^
+2016-03-28 08:42:51 ERROR  : ERROR:  syntax error at or near "e"
+LINE 8:   WHERE fullname = Educação e Tecnologia;
+                                    ^
+2016-03-28 08:43:01 ERROR  : ERROR:  column "Educação e Tecnologia" does not exist
+LINE 8:   WHERE fullname = "Educação e Tecnologia";
+                           ^
+2016-03-29 09:52:51 ERROR  : ERROR:  column g.name does not exist
+LINE 1: SELECT g.id, g.itemid, g.userid, g.name, g.finalgrade 
+                                         ^
+2016-03-29 10:32:01 ERROR  : ERROR:  operator does not exist: bigint = record
+LINE 1: ...M mdlacademico_log WHERE action='login' AND userid= (118, 5)
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-03-31 18:56:29 ERROR  : ERROR:  syntax error at or near "e"
+LINE 1: ....contextlevel=50 AND rs.roleid=3 AND e.instanceid e.instance...
+                                                             ^
+2016-04-08 09:19:21 ERROR  : ERROR:  missing FROM-clause entry for table "u"
+LINE 3: SELECT u.id, u.firstname,u.lastname,MIN(l.time) 
+               ^
+2016-04-08 09:20:28 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 5: SELECT MIN(time) FROM mdlacademico_log WHERE userid=118 AND ...
+        ^
+2016-04-08 09:21:31 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 8: FROM mdlacademico_role_assignments rs INNER JOIN mdlacademic...
+        ^
+2016-06-01 12:58:09 ERROR  : ERROR:  argument of WHERE must be type boolean, not type integer
+2016-06-01 12:58:27 ERROR  : ERROR:  argument of WHERE must be type boolean, not type integer
+2016-06-01 16:11:31 ERROR  : ERROR:  column "userid" does not exist
+LINE 1: SELECT userid, course, module, action, COUNT(module) AS qtd
+               ^
+2016-06-01 16:11:54 ERROR  : ERROR:  column "action" does not exist
+LINE 1: SELECT course, module, action, COUNT(module) AS qtd
+                               ^
+HINT:  Perhaps you meant to reference the column "mdlacademico_course_modules.section".
+2016-06-01 16:12:08 ERROR  : ERROR:  column "mdlacademico_course_modules.course" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT course, module, COUNT(module) AS qtd
+               ^
+2016-06-01 17:00:09 ERROR  : ERROR:  column "mdlacademico_course_modules.instance" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT module, instance, COUNT(module) AS qtd
+                       ^
+2016-06-01 17:00:39 ERROR  : ERROR:  column "mdlacademico_course_modules.instance" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT instance, COUNT(module) AS qtd
+               ^
+2016-06-01 20:20:39 ERROR  : ERROR:  column "course" does not exist
+2016-06-05 16:35:22 ERROR  : ERROR:  syntax error at or near "cm"
+LINE 10: cm.course = ml.course AND
+         ^
+2016-06-05 16:39:39 ERROR  : ERROR:  missing FROM-clause entry for table "ml"
+LINE 4:  WHERE action='login' and ml.course = 391 
+                                  ^
+2016-06-05 16:47:29 ERROR  : ERROR:  column "l.action" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT u.id, u.firstname, u.lastname, action,
+                                              ^
+2016-06-06 06:30:24 ERROR  : ERROR:  syntax error at or near "cm"
+LINE 9: cm.course = ml.course AND
+        ^
+2016-06-06 06:30:41 ERROR  : ERROR:  syntax error at or near "cm"
+LINE 9: cm.course = ml.course AND
+        ^
+2016-06-06 06:30:53 ERROR  : ERROR:  syntax error at or near "cm"
+LINE 8: cm.course = ml.course AND
+        ^
+2016-06-06 10:55:15 ERROR  : ERROR:  syntax error at or near "and"
+LINE 2: where mdlacademico_quiz_attempts.userid = + i + and
+                                                        ^
+2016-06-06 10:55:34 ERROR  : ERROR:  syntax error at or near "and"
+LINE 2: where mdlacademico_quiz_attempts.userid = + i + and mdlacade...
+                                                        ^
+2016-06-06 10:56:52 ERROR  : ERROR:  column "‘abandoned’" does not exist
+LINE 2: ...erid = 178 and mdlacademico_quiz_attempts.state = ‘abandoned...
+                                                             ^
+2016-06-06 10:57:10 ERROR  : ERROR:  column "abandoned" does not exist
+LINE 2: ...erid = 178 and mdlacademico_quiz_attempts.state = "abandoned...
+                                                             ^
+2016-06-06 10:58:46 ERROR  : ERROR:  syntax error at or near ","
+LINE 2: ...id = 178 and mdlacademico_quiz_attempts.state = "abandoned",
+                                                                      ^
+2016-06-06 10:58:50 ERROR  : ERROR:  column "abandoned" does not exist
+LINE 2: ...erid = 178 and mdlacademico_quiz_attempts.state = "abandoned...
+                                                             ^
+2016-09-05 08:49:18 ERROR  : ERROR:  syntax error at or near "**"
+LINE 1: ** SELECT id,itemname,itemtype,gradetype,scaleid FROM mdlaca...
+        ^
+2016-09-05 09:19:52 ERROR  : ERROR:  syntax error at or near "mdlacademico_user"
+LINE 7: SELECT * mdlacademico_user 
+                 ^
+2016-09-05 09:58:39 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 10: SELECT id,name FROM mdlacademico_forum
+         ^
+2016-09-05 09:58:48 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 10: SELECT id FROM mdlacademico_forum
+         ^
+2016-09-05 15:28:54 ERROR  : ERROR:  column "general" does not exist
+LINE 10: ...ourse, name, type FROM mdlacademico_forum WHERE type=general
+                                                                 ^
+2016-09-05 15:29:22 ERROR  : ERROR:  column "general" does not exist
+LINE 10: ...rse, name, type FROM mdlacademico_forum WHERE type="general"
+                                                               ^
+2016-09-05 15:30:15 ERROR  : ERROR:  column "news" does not exist
+LINE 10: ..., course, name, type FROM mdlacademico_forum WHERE type=news
+                                                                    ^
+2016-09-05 15:30:35 ERROR  : ERROR:  column "´news´" does not exist
+LINE 10: ...course, name, type FROM mdlacademico_forum WHERE type=´news´
+                                                                  ^
+2016-09-05 15:31:07 ERROR  : ERROR:  syntax error at or near "buy"
+LINE 10: ...d, course, name, type FROM mdlacademico_forum order buy type
+                                                                ^
+2016-09-05 15:34:11 ERROR  : ERROR:  column "name" does not exist
+LINE 34: SELECT id, name, course FROM mdlacademico_log
+                    ^
+HINT:  Perhaps you meant to reference the column "mdlacademico_log.time".
+2016-09-05 15:44:49 ERROR  : out of memory for query result
+2016-09-05 17:50:29 ERROR  : ERROR:  column "course" does not exist
+LINE 2:  SELECT id, course, name FROM mdlacademico_forum_posts 
+                    ^
+2016-09-05 17:50:36 ERROR  : ERROR:  column "name" does not exist
+LINE 2:  SELECT id, name FROM mdlacademico_forum_posts 
+                    ^
+2016-09-05 18:15:09 ERROR  : ERROR:  relation "mdl_user" does not exist
+LINE 3: ...irstname, u.lastname, COUNT(l.id) AS qvisita FROM mdl_user u...
+                                                             ^
+2016-09-05 18:20:12 ERROR  : ERROR:  column "qtd" does not exist
+LINE 13: ORDER BY qtd;
+                  ^
+2016-09-05 18:20:29 ERROR  : ERROR:  column "mdlacademico_course_modules.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 10: SELECT * FROM mdlacademico_course_modules
+                ^
+2016-09-05 18:25:14 ERROR  : ERROR:  syntax error at or near "GROUP"
+LINE 12: GROUP BY d.id, u.id
+         ^
+2016-09-05 18:25:40 ERROR  : ERROR:  syntax error at or near "GROUP"
+LINE 12: GROUP BY d.id, u.id
+         ^
+2016-09-06 08:31:06 ERROR  : ERROR:  syntax error at or near "and"
+LINE 8: ...ademico_log where mdlacademico_log.userid = + i + and mdlaca...
+                                                             ^
+2016-09-06 08:36:49 ERROR  : ERROR:  syntax error at or near "and"
+LINE 8: ...ademico_log where mdlacademico_log.userid = + i + and mdlaca...
+                                                             ^
+2016-09-06 10:06:20 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2016-09-06 10:37:38 ERROR  : ERROR:  argument of AND must be type boolean, not type integer
+LINE 8: WHERE userid=(118 and 120 )  
+                      ^
+2016-09-06 21:06:01 ERROR  : ERROR:  syntax error at or near "COUNT"
+LINE 1: SELECT * COUNT(l.id) AS qvisita 
+                 ^
+2016-09-06 21:06:08 ERROR  : ERROR:  column "l.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT *, COUNT(l.id) AS qvisita 
+               ^
+2016-09-06 21:18:52 ERROR  : ERROR:  relation "mdl_log" does not exist
+LINE 2: FROM mdl_log WHERE action='login' AND userid=5
+             ^
+2016-09-06 21:19:22 ERROR  : ERROR:  column "mdlacademico_log.userid" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT userid, COUNT(id) AS qvisita 
+               ^
+2016-09-06 21:20:21 ERROR  : ERROR:  column "mdlacademico_log.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT id, COUNT(id) AS qvisita 
+               ^
+2016-09-06 21:20:27 ERROR  : ERROR:  syntax error at or near "("
+LINE 1: SELECT id COUNT(id) AS qvisita 
+                       ^
+2016-09-06 21:23:26 ERROR  : ERROR:  column "mdlacademico_course_modules.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT *, COUNT(module) AS qtd
+               ^
+2016-09-07 11:31:34 ERROR  : ERROR:  column "weeks" does not exist
+LINE 10:   WHERE format = weeks
+                          ^
+2016-09-07 11:31:41 ERROR  : ERROR:  column "weeks" does not exist
+LINE 10:   WHERE format = "weeks"
+                          ^
+2016-09-09 15:47:06 ERROR  : ERROR:  relation "mdlacademico_role_assgnments" does not exist
+LINE 1: select * from mdlacademico_role_assgnments limit 1
+                      ^
+2016-09-09 15:50:56 ERROR  : ERROR:  relation "mdlacademico_roles" does not exist
+LINE 1: select * from  mdlacademico_roles
+                       ^
+2016-09-09 15:52:27 ERROR  : ERROR:  syntax error at or near "("
+LINE 1: ...CT u.id, u.firstname, u.lastname, c.category COUNT(l.id) AS ...
+                                                             ^
+2016-09-09 15:53:45 ERROR  : ERROR:  syntax error at or near "mdlacademico_course"
+LINE 5: INNER JOIN JOIN mdlacademico_course AS c ON c.id = e.instanc...
+                        ^
+2016-09-09 16:00:28 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 8: SELECT u.id, u.firstname, u.lastname, c.category, COUNT(l.id...
+        ^
+2016-09-09 16:08:00 ERROR  : ERROR:  column "l.action" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 7: ...ame, u.lastname, c.category ORDER BY COUNT(l.id), l.action D...
+                                                             ^
+2016-09-09 16:11:47 ERROR  : ERROR:  syntax error at or near "'courseid'"
+LINE 1: ....id, u.firstname, u.lastname, c.category, c.id as 'courseid'...
+                                                             ^
+2016-09-09 16:12:09 ERROR  : ERROR:  column c.courseid does not exist
+LINE 7: ...OUP BY u.id, u.firstname, u.lastname, c.category, c.courseid...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "l.course".
+2016-09-09 16:27:02 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 8: SELECT u.id, u.email, u.firstname, u.lastname, c.category, c...
+        ^
+2016-09-09 16:37:56 ERROR  : ERROR:  missing FROM-clause entry for table "ad"
+LINE 1: ...d, u.firstname, u.lastname, c.category, l.action, ad.action ...
+                                                             ^
+2016-09-09 16:38:35 ERROR  : ERROR:  missing FROM-clause entry for table "ad"
+LINE 1: ...d, u.firstname, u.lastname, c.category, l.action, ad.action ...
+                                                             ^
+2016-09-09 16:46:22 ERROR  : ERROR:  syntax error at or near "view"
+LINE 6: ...alk','view discussion','view forum','view forums,'view submi...
+                                                             ^
+2016-09-09 20:45:29 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 19: SELECT action,
+         ^
+2016-09-09 20:45:51 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 19: SELECT action,
+         ^
+2016-09-09 20:46:34 ERROR  : ERROR:  syntax error at or near "action"
+LINE 6: ORDER BY qtd action;
+                     ^
+2016-09-09 20:52:01 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 19: SELECT action,
+         ^
+2016-09-09 20:52:06 ERROR  : ERROR:  syntax error at or near "LECT"
+LINE 1: LECT action,
+        ^
+2016-09-09 22:58:44 ERROR  : ERROR:  relation "mdlacademico_forum_post" does not exist
+LINE 1: SELECT * FROM  mdlacademico_forum_post
+                       ^
+2016-09-09 22:58:54 ERROR  : ERROR:  syntax error at or near "mdlacademico_forum_post"
+LINE 1: SELECT * mdlacademico_forum_post
+                 ^
+2016-09-09 23:01:46 ERROR  : ERROR:  unterminated quoted string at or near "'pg_toast‘) 
+	ORDER BY schemaname, tablename
+LIMIT 5"
+LINE 2: ...aname NOT IN ('pg_catalog', 'information_schema', 'pg_toast‘...
+                                                             ^
+2016-09-09 23:02:16 ERROR  : ERROR:  unterminated quoted string at or near "'pg_toast‘) 
+	ORDER BY schemaname, tablename"
+LINE 2: ...aname NOT IN ('pg_catalog', 'information_schema', 'pg_toast‘...
+                                                             ^
+2016-09-09 23:11:33 ERROR  : ERROR:  column "userid" does not exist
+LINE 5: WHERE userid =43
+              ^
+2016-09-14 19:48:38 ERROR  : ERROR:  argument of AND must be type boolean, not type integer
+LINE 5:   WHERE category IN (6 and 16)
+                             ^
+2016-09-14 19:48:46 ERROR  : ERROR:  syntax error at or near "and"
+LINE 5:   WHERE category IN (6, and 16)
+                                ^
+2016-09-14 19:48:57 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 5:   WHERE category IN (6, AND 16)
+                                ^
+2016-09-14 22:10:43 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 6: SELECT u.id, u.firstname, u.lastname, u.email, c.id AS cours...
+        ^
+2016-09-15 19:03:51 ERROR  : ERROR:  syntax error at or near "IN"
+LINE 7: WHERE l.action=(action) AND c.category= IN (6, 7, 16)  AND e...
+                                                ^
+2016-09-15 19:26:00 ERROR  : ERROR:  column "turma" does not exist
+LINE 7: ...=(action) AND c.category IN (6, 7, 16) AND c.id =(turma) AND...
+                                                             ^
+2016-09-15 19:42:33 ERROR  : ERROR:  column reference "id" is ambiguous
+LINE 7: ...=(action) AND c.category IN (6, 7, 16) AND c.id =(id) AND e....
+                                                             ^
+2016-09-15 19:43:34 ERROR  : ERROR:  column "turma" does not exist
+LINE 7: ....action=(action) AND c.category IN (6, 7, 16) AND turma =(c....
+                                                             ^
+2016-09-15 19:45:18 ERROR  : ERROR:  column reference "id" is ambiguous
+LINE 7: ...=(action) AND c.category IN (6, 7, 16) AND c.id =(id) AND e....
+                                                             ^
+2016-09-15 19:47:13 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 11: SELECT * FROM mdlacademico_course WHERE id = 88
+         ^
+2016-09-15 21:19:35 ERROR  : ERROR:  column "c.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT u.id, u.firstname, u.lastname, c.category, c.id AS tu...
+                                                          ^
+2016-09-16 17:37:53 ERROR  : ERROR:  column "c.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT u.id, u.firstname, u.lastname, c.category, c.id AS tu...
+                                                          ^
+2016-11-07 11:55:58 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2016-11-17 08:57:37 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2016-11-17 09:07:28 ERROR  : ERROR:  missing FROM-clause entry for table "c"
+LINE 1: SELECT u.id, u.firstname, u.lastname, c.category, l.id AS tu...
+                                              ^
+2016-11-17 09:07:48 ERROR  : ERROR:  column "c.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT u.id, u.firstname, u.lastname, c.category, c.id AS tu...
+                                                          ^
+2016-12-01 11:03:37 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 6:  SELECT u.id, u.firstname, u.lastname 
+         ^
+2016-12-01 11:06:07 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 6:  SELECT u.id, u.firstname, u.lastname 
+         ^
+2016-12-01 11:10:23 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 6:  SELECT u.id, u.firstname, u.lastname 
+         ^
+2016-12-01 11:21:46 ERROR  : ERROR:  syntax error at or near "ELECT"
+LINE 1: ELECT c.id,c.fullname, c.category, c.shortname FROM mdlacade...
+        ^
+2016-12-01 11:24:36 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 6:  SELECT u.id, u.firstname, u.lastname 
+         ^
+2016-12-01 11:26:17 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 6:  SELECT u.id, u.firstname, u.lastname 
+         ^
+2016-12-01 11:27:44 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 6:  SELECT u.id, u.firstname, u.lastname 
+         ^
+2016-12-01 17:39:42 ERROR  : ERROR:  syntax error at or near "cm"
+LINE 9: cm.course = ml.course AND
+        ^
+2016-12-03 13:18:41 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 9: SELECT COUNT(id) AS cliques_totais FROM mdlacademico_log WHE...
+        ^
+2016-12-03 13:19:25 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 9: SELECT COUNT(id) AS cliques_totais FROM mdlacademico_log WHE...
+        ^
+2016-12-04 08:41:30 ERROR  : ERROR:  SELECT DISTINCT ON expressions must match initial ORDER BY expressions
+LINE 1: SELECT DISTINCT ON (ml.userid,ml.course) u.firstname as alun...
+                            ^
+2016-12-04 08:41:44 ERROR  : ERROR:  SELECT DISTINCT ON expressions must match initial ORDER BY expressions
+LINE 1: SELECT DISTINCT ON (ml.userid,ml.course) u.firstname as alun...
+                            ^
+2017-04-21 15:47:13 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2017-04-22 18:07:40 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2017-12-13 09:05:37 ERROR  : ERROR:  unterminated quoted string at or near "'pg_toast‘) 
+	ORDER BY schemaname, tablename
+"
+LINE 2: ...aname NOT IN ('pg_catalog', 'information_schema', 'pg_toast‘...
+                                                             ^
